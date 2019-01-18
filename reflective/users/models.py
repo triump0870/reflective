@@ -10,7 +10,7 @@ class User(AbstractUser):
     name = CharField(_("Name of User"), blank=True, max_length=255)
 
     def __str__(self):
-        return self.name
+        return "#%s-%s" % (str(self.id), self.name)
 
     def get_absolute_url(self):
         return reverse("users:detail", kwargs={"username": self.username})
