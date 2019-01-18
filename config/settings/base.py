@@ -64,6 +64,7 @@ DJANGO_APPS = [
 THIRD_PARTY_APPS = [
     'crispy_forms',
     'allauth',
+    'authtools',
     'allauth.account',
     'allauth.socialaccount',
     'rest_framework',
@@ -71,6 +72,7 @@ THIRD_PARTY_APPS = [
 LOCAL_APPS = [
     'reflective.users.apps.UsersAppConfig',
     # Your stuff: custom apps go here
+    'reflective.employees',
 ]
 # https://docs.djangoproject.com/en/dev/ref/settings/#installed-apps
 INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + LOCAL_APPS

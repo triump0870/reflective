@@ -7,3 +7,6 @@ IPYTHONDIR=/app/.ipython
 # ------------------------------------------------------------------------------
 REDIS_URL=redis://redis:6379/0
 
+# Database
+# ------------------------------------------------------------------------------
+DATABASE_URL=postgres://debug:debug@postgres:5432/reflective
